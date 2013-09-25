@@ -1,0 +1,42 @@
+#bookmarkInfo {
+  position: absolute;
+  top: -1000px;
+  left: 0;
+  width: 92%;
+  margin: 0 4%;
+  background: #eeecec;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border: 1px solid #e3e1e1;
+  z-index: 9999999;
+  opacity: 0.95;
+  font-family: Helvetica, Verdana, sans-serif;
+}
+#bookmarkInfo #bookmarkContent {
+  padding: 3% 1%;
+  font-size: 13px;
+  text-align: center;
+}
+#bookmarkInfo #bookmarkIgnore {
+  display: none;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  text-decoration: none;
+  color: #323131;
+  font-weight: normal;
+  font-size: 12px;
+  margin-bottom: -28px;
+  margin-right: 5px;
+  background: #e3e1e1;
+  border-top: none;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding: 6px 10px;
+}
+#bookmarkInfo #bookmarkIgnore #bookmarkIgnore:hover {
+  background: #b6b4b4;
+}
+#bookmarkInfo #bookmarkIgnore #bookmarkIgnore:active {
+  background: #636262;
+}
