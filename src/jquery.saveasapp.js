@@ -45,12 +45,12 @@
             if(window.navigator.standalone) return false;
 
             // plugin ignored by user
-            //if(this.getCookie(this.settings.ignoreCookie) === 'true') return false;
+            if(this.getCookie(this.settings.ignoreCookie) === 'true') return false;
 
             // check if plugin was used more receantly than frequency setting
             var now = parseInt(new Date().getTime());
-            //if((now - parseInt(this.getCookie(this.settings.showedCookie))) < this.settings.frequency)
-            //    return false;
+            if((now - parseInt(this.getCookie(this.settings.showedCookie))) < this.settings.frequency)
+                return false;
 
             // unsupported device
             if(!this.checkDevice()) return false;
@@ -177,7 +177,7 @@
             this.$panel = $(
                 '<div id="bookmarkInfo" style="display:none">' +
                 '   <div id="bookmarkContent">'+
-                '       '+this.getText()+ //'<br>'+navigator.userAgent+
+                '       '+this.getText()+
                 '   </div>'+
                 '   <a href="#" id="bookmarkIgnore">Piilota</a>'+
                 '</div>'
